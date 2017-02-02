@@ -1,0 +1,16 @@
+{
+    "name": "frewillems/laravel-opcache",
+    "description": "Laravel PHP OPCache tools",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Frederick Willems",
+            "email": "fre.willems@thecomet.be"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}

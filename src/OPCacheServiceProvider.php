@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class OPCacheServiceProvider extends ServiceProvider
 {
     protected $cmd = [
-        'FreWillems\OPCache\OPCacheCommand'
+        'KommaBoard\OPCache\OPCacheCommand'
     ];
 
     /**

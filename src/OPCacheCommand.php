@@ -40,10 +40,19 @@ class OPCacheCommand extends Command
             $this->line($result->message);
             $this->logger->info('OPCache clear command: ' . $result->message);
         }
-        catch (ServerException | ClientException $e) {
-            $result = json_decode($e->getResponse()->getBody());
-            $this->line('Error ' . $e->getCode() . ': ' . $result->message);
-            $this->logger->error('OPCache clear command: ' . $result->message);
+        catch (ServerException $e) {
+            $this->handleException($e);
         }
+        catch (ClientException $e)
+        {
+            $this->handleException($e);
+        }
+    }
+
+    private function handleException($e)
+    {
+        $result = json_decode($e->getResponse()->getBody());
+        $this->line('Error ' . $e->getCode() . ': ' . $result->message);
+        $this->logger->error('OPCache clear command: ' . $result->message);
     }
 }

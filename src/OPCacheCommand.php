@@ -1,6 +1,6 @@
 <?php
 
-namespace FreWillems\OPCache;
+namespace KommaBoard\OPCache;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;

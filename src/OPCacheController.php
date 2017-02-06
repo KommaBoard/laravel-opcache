@@ -1,6 +1,6 @@
 <?php
 
-namespace FreWillems\OPCache;
+namespace KommaBoard\OPCache;
 
 use Illuminate\Hashing\BcryptHasher;
 use Illuminate\Http\Request;

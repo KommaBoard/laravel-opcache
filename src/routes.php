@@ -1,3 +1,3 @@
 <?php
 
-Route::post('opcache/clear/', 'FreWillems\OPCache\OPCacheController@clear');
+Route::post('opcache/clear/', 'KommaBoard\OPCache\OPCacheController@clear');

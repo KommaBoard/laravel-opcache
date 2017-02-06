@@ -1,6 +1,6 @@
 <?php
 
-namespace FreWillems\OPCache;
+namespace KommaBoard\OPCache;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -31,7 +31,7 @@ class OPCacheServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__ . '/config/opcache.php', 'opcache');
-        $this->app->make('FreWillems\OPCache\OPCacheController');
+        $this->app->make('KommaBoard\OPCache\OPCacheController');
         $this->commands($this->cmd);
     }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "frewillems/laravel-opcache",
+    "name": "kommaboard/laravel-opcache",
     "description": "Laravel PHP OPCache tools",
     "keywords": ["laravel", "opcache", "php"],
     "type": "library",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FreWillems\\OPCache\\": "src/"
+            "KommaBoard\\OPCache\\": "src/"
         }
     }
 }

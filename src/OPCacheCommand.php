@@ -52,7 +52,8 @@ class OPCacheCommand extends Command
     private function handleException($e)
     {
         $result = json_decode($e->getResponse()->getBody());
+        dd($result);
         $this->line('Error ' . $e->getCode() . ': ' . $result->message);
-        $this->logger->error('OPCache clear command: ' . $result->message);
+        // $this->logger->error('OPCache clear command: ' . $result->message);
     }
 }
